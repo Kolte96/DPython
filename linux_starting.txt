@@ -1,0 +1,53 @@
+Que1: create a folder named as documents - in the document folder create two folder with the name as test & learning
+-Now from the current location create any file into the test folder
+- copy the same file created in test folder to the learning folder
+- but make sure copy the file from the current folder - remove the complete folder named as test
+Ans:
+
+gaurikolte1@cloudshell:~$ mkdir test learning
+gaurikolte1@cloudshell:~$ cd /home/gaurikolte1/test
+gaurikolte1@cloudshell:~/test$ touch kno.txt
+gaurikolte1@cloudshell:~/test$ ls
+kno.txt
+gaurikolte1@cloudshell:~/test$ cp kno.txt /home/gaurikolte1/learning
+gaurikolte1@cloudshell:~/test$ ls
+kno.txt
+gaurikolte1@cloudshell:~/test$ cd ../
+gaurikolte1@cloudshell:~$ rm -r test
+gaurikolte1@cloudshell:~$ ls
+learning  README-cloudshell.txt
+gaurikolte1@cloudshell:~$ cd learning
+gaurikolte1@cloudshell:~/learning$ ls
+kno.txt
+
+Que2: create the two folder named as datascience & bigdata
+- bigdata folder is the subdirectory of the datascience
+- Cond: [use only 1 single mkdir command for the above question without using the cd]
+Ans:
+
+gaurikolte1@cloudshell:~/learning$ mkdir -p datascience/bigdata
+gaurikolte1@cloudshell:~/learning$ cd datascience
+gaurikolte1@cloudshell:~/learning/datascience$ ls
+bigdata
+
+
+Que3: create a set of folder with the name as regex1, regex2, regex3...... till regex100 using 1 single mkdir command
+Ans:
+
+gaurikolte1@cloudshell:~$ mkdir regex{1..100}
+gaurikolte1@cloudshell:~$ ls
+datascience            regex20  regex34  regex48  regex61  regex75  regex89
+README-cloudshell.txt  regex21  regex35  regex49  regex62  regex76  regex9
+regex1                 regex22  regex36  regex5   regex63  regex77  regex90
+regex10                regex23  regex37  regex50  regex64  regex78  regex91
+regex100               regex24  regex38  regex51  regex65  regex79  regex92
+regex11                regex25  regex39  regex52  regex66  regex8   regex93
+regex12                regex26  regex4   regex53  regex67  regex80  regex94
+regex13                regex27  regex40  regex54  regex68  regex81  regex95
+regex14                regex28  regex41  regex55  regex69  regex82  regex96
+regex15                regex29  regex42  regex56  regex7   regex83  regex97
+regex16                regex3   regex43  regex57  regex70  regex84  regex98
+regex17                regex30  regex44  regex58  regex71  regex85  regex99
+regex18                regex31  regex45  regex59  regex72  regex86
+regex19                regex32  regex46  regex6   regex73  regex87
+regex2                 regex33  regex47  regex60  regex74  regex88
